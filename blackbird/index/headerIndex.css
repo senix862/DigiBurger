@@ -1,0 +1,107 @@
+*{
+  box-sizing: border-box;
+}
+
+body{
+  margin: 0;
+  font-family: Verdana;
+  font-size: 1rem;
+  /* line-height: 1.5; */
+  color: #3333;
+  overflow-x: hidden;
+}
+
+
+#myVideo {
+  position: fixed;
+  right: 0;
+  bottom: 0;
+  min-width: 100%;
+  min-height: 100%;
+}
+
+.content {
+  position: fixed;
+  bottom: 0;
+  background: rgba(0, 0, 0, 0.5);
+  color: #f1f1f1;
+  width: 100%;
+  padding: 20px;
+}
+
+#myBtn {
+  width: 200px;
+  font-size: 18px;
+  padding: 10px;
+  border: none;
+  background: #000;
+  color: #fff;
+  cursor: pointer;
+}
+
+#myBtn:hover {
+  background: #ddd;
+  color: black;
+}
+
+.vid-header{
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  color: #fff;
+}
+
+.container{
+  width: 100%;
+  padding-left: 1rem;
+  padding-right: 1rem;
+  margin: auto;
+  text-align: center;
+}
+
+.fullscreen-video{
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100vh;
+  overflow: hidden;
+}
+ .fullscreen-video video{
+  min-width: 100%;
+  min-height: 100%;
+}
+
+.header-overlay{
+  height: 100vh;
+  width: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  background: rgba(0, 0, 0, 0.5);
+  z-index: 1;
+}
+
+.header-content h1{
+  font-size: 50px;
+  margin-bottom: 0;
+}
+
+.myBtn{
+  background: #34b3a8;
+  color: #fff;
+  font-size: 1.2em;
+  padding: 1em 2em;
+  text-decoration: none;
+}
+
+.section-a{
+  background-color: gray;
+  color: red;
+}
+
+@media(max-width:1080px) {
+  .container{
+
+  }
+}

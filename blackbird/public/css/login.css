@@ -1,0 +1,85 @@
+*{
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  text-decoration: none;
+  border: none;
+  outline: none;
+  box-sizing: border-box;
+}
+
+.cuerpo{
+  float: left;
+  margin-top: 100px;
+  width:100%;
+  text-align: center;
+}
+
+
+/* Campos a llenar */
+
+label {
+  width: auto;
+  margin-top: 12px;
+  padding: 4px;
+  font-family: 'Quicksand', sans-serif;
+}
+
+input {
+    border-radius: 10px;
+    border: 1px solid rgb(165, 96, 143);
+    line-height: 20px;
+    padding: 3px;
+}
+label#recuerd{
+  float: left;
+  width: auto;
+}
+input#remember{
+  display: inline-block;
+  width: 5%;
+}
+button#ingresar{
+  color: white;
+  background-color:rgb(165, 96, 143);
+  text-align: center;
+  width: 28%;
+  max-width: 200px;
+  margin: 10px;
+  right: 0;
+  left: 0;
+  padding: 8px;
+  border-radius: 10px;
+  font-family: 'Quicksand', sans-serif;
+}
+
+.button{
+  text-align: center;
+}
+
+textarea {
+  border-radius: 10px;
+  border: 1px solid rgb(165, 96, 143);
+  line-height: 20px;
+  padding: 3px;
+}
+main .datos a{
+  display: block;
+  margin-top: .4vh;
+  color: grey;
+  text-decoration: underline;
+}
+div.cookie{
+  overflow:hidden;
+}
+div .datos .errores{
+  margin-top: 2vh;
+}
+
+/*media queries*/
+@media (min-width:768px) {
+  .cuerpo {
+   width: 100%;
+   margin-top: 0;
+ }
+}

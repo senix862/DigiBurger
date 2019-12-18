@@ -1,0 +1,78 @@
+*{
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  text-decoration: none;
+  border: none;
+  outline: none;
+  box-sizing: border-box;
+}
+
+.cuerpo{
+  float: left;
+  margin-top: 140px;
+  width: 100%;
+}
+
+/* AQUI VA LA PARTE DEL PERFIL */
+
+.main-profile{
+
+}
+
+.img-background{
+  overflow: hidden;
+}
+
+.img-background img{
+  margin-top: 20px;
+  display: block;
+  border-radius: 100%;
+  width: 150px;
+  margin-left: auto;
+  margin-right: auto;
+  z-index: 0;
+}
+
+/* Esto es para el boton de editar y agregarlo a la imagen.*/
+/*#pencil {
+  z-index: 1;
+  float: right;
+  margin-right: 35%;
+  border-radius: 100%;
+  background-color: #e0e0d1;
+  padding: 8px;
+}*/
+
+h2{
+  margin-top: 15px;
+  text-align: center;
+  font-family: 'Quicksand', sans-serif;
+}
+
+h5{
+  text-align:center;
+  width: 60%;
+  margin: auto;
+  /* border: 1px solid gray;
+  border-radius: 8px; */
+  font-family: 'Quicksand', sans-serif;
+}
+button.editar {
+  display: block;
+  margin: auto;
+  color: white;
+  background-color:rgb(165, 96, 143);
+  text-align: center;
+  max-width: 200px;
+  padding: 10px;
+  border-radius: 10px;
+  font-family: 'Quicksand', sans-serif;
+}
+
+@media (min-width:768px) {
+  .cuerpo {
+   width: 100%;
+   margin-top: 0;
+ }
+}

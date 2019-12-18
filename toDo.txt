@@ -1,0 +1,5 @@
+-pestaña de alta de producto
+-carrito
+-funcionalidad de logeado/admin
+-errores en registro+login 
+-pagina logout

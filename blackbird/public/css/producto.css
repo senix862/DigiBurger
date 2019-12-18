@@ -1,0 +1,120 @@
+*{
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  text-decoration: none;
+  border: none;
+  outline: none;
+  box-sizing: border-box;
+}
+
+.cuerpo{
+  float: left;
+  width: 100%;
+  margin-top: 130px;
+  text-align:center;
+}
+
+/*---------Propiedades del ITEM---------*/
+.img-container img{
+  width: 70%;
+}
+
+.item-info{
+  padding: 10px;
+}
+
+button#comprar {
+  color: white;
+  background-color:rgb(165, 96, 143);
+  text-align: center;
+  width: 30%;
+  max-width: 200px;
+  margin: 5px;
+  right: 0;
+  left: 0;
+  padding: 8px;
+  border-radius: 10px;
+  font-family: 'Quicksand', sans-serif;
+}
+
+.item-price{
+  text-align: center;
+  font-size: 25px;
+  font-family: 'Quicksand', sans-serif;
+}
+
+.item-name{
+  text-align: center;
+  font-size: 15px;
+  font-family: 'Quicksand', sans-serif;
+}
+
+.item-description{
+  font-size: 14px;
+  font-weight: 300;
+  margin: 0 15px;
+  word-break: break-word;
+  text-align: justify;
+  font-family: 'Quicksand', sans-serif;
+}
+
+.item-optionals{
+  padding: 0 4px;
+  text-align: left;
+  border: 1px solid gray;
+}
+
+.item-optionals-item {
+  padding: 5px 0;
+  font-size: 12px;
+}
+
+.item-optionals-item span{
+  color: #666;
+  margin-right: 8px;
+  width: 33%;
+  display: inline-block;
+  font-family: 'Quicksand', sans-serif;
+}
+
+.item-optionals-item strong{
+  border-bottom: 1px solid #eee;
+  width: 66%;
+  font-family: 'Quicksand', sans-serif;
+}
+
+/*media queries*/
+@media (min-width:768px) {
+  .cuerpo{
+    margin-top: 0;
+  }
+
+  .img-container {
+    float: left;
+    width: 55%;
+  }
+  .item-info{
+    float: right;
+    width: 45%;
+    margin-top: 25px;
+  }
+
+  .item-description{
+    margin-top: 10px;
+    float: left;
+  }
+
+  .item-optionals{
+    float: left;
+    margin-top: 15px;
+    margin-bottom: 15px;
+    margin-left: 30%;
+    width: 40%;
+  }
+  @media (min-width:1440px) {
+  .container{
+    width: 100%;
+  }
+
+  }

@@ -1,0 +1,47 @@
+*{
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  text-decoration: none;
+  border: none;
+  outline: none;
+  box-sizing: border-box;
+}
+
+/* div.container{
+  width: 100%
+  text-align: center;
+  position: relative;
+} */
+.cuerpo{
+  float: left;
+  margin-top: 120px;
+  width: 100%;
+  text-align: center;
+}
+
+
+
+/* Campos a llenar */
+
+button.welcome{
+  color: white;
+  background-color:rgb(165, 96, 143);
+  text-align: center;
+  width: 50%;
+  max-width: 200px;
+  margin: 10px;
+  right: 0;
+  left: 0;
+  padding: 8px;
+  border-radius: 10px;
+  font-family: 'Quicksand', sans-serif;
+}
+
+
+
+/*media queries*/
+@media (min-width:768px) {
+  .cuerpo{
+    margin-top: 10px;
+  }

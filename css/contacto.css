@@ -1,0 +1,77 @@
+*{
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  text-decoration: none;
+  border: none;
+  outline: none;
+  box-sizing: border-box;
+}
+
+.cuerpo{
+  float: left;
+  margin-top: 110px;
+  width: 100%;
+  text-align: center;
+}
+
+/*-- Campos a llenar -- */
+label {
+  float: left;
+  width: 100%;
+  margin-top: 8px;
+  padding: 3px;
+  font-family: 'Quicksand', sans-serif;
+}
+
+input {
+    border-radius: 10px;
+    border: 1px solid rgb(165, 96, 143);
+    line-height: 20px;
+    padding: 3px;
+}
+
+button {
+  display:inline-block;
+  color: white;
+  background-color:rgb(165, 96, 143);
+  text-align: center;
+  width: 17%;
+  margin: auto;
+  right: 0;
+  left: 0;
+  padding: 8px;
+  border-radius: 10px;
+}
+
+textarea {
+  width: 75%;
+  height: 40vh;
+  border-radius: 10px;
+  border: 1px solid rgb(165, 96, 143);
+  line-height: 20px;
+  padding: 3px;
+}
+
+#derechos p{
+  font-family: 'Quicksand', sans-serif;
+}
+/*media queries*/
+@media (min-width:768px) {
+  .container{
+    max-width: 720px;
+  }
+
+  .cuerpo {
+   width: 100%;
+   margin-top: 0;
+ }
+
+}
+
+  @media (min-width:1200px) {
+    .container{
+      max-width:1180px;
+      margin: auto;
+    }
+  }

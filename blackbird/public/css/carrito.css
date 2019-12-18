@@ -1,0 +1,92 @@
+*{
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  text-decoration: none;
+  border: none;
+  outline: none;
+  box-sizing: border-box;
+}
+
+.cuerpo{
+  float: left;
+  margin-top: 120px;
+  width: 100%;
+  text-align: center;
+}
+
+/* ---- Carrito de Compras -----*/
+
+
+p#prod{
+  background-color:rgb(165, 96, 143);
+  border-radius: 10px;
+  padding: 3px;
+  width: 90%;
+  font-size: 18px;
+  margin: auto;
+  font-family: 'Quicksand', sans-serif;
+  color: white;
+  margin-bottom: 15px;
+  margin-top: 15px;
+}
+table, th, td {
+  border: 0.5px solid black;
+  border-collapse: collapse;
+  text-align: center;
+}
+th, td {
+  padding: 5px;
+}
+
+table {
+width: 90%;
+margin-left: 5%;
+margin-bottom: 15px;
+}
+li {
+  display: inline-block;
+  margin-top: 3px;
+}
+button.comprar {
+  display: inline-block;
+  color: white;
+  background-color:rgb(165, 96, 143);
+  text-align: center;
+  width: 40%;
+  max-width: 120px;
+  margin: 10px;
+  padding: 5px;
+  border-radius: 10px;
+  font-family: 'Quicksand', sans-serif;
+}
+
+button.masmenos{
+  display: inline-block;
+  width: 30%;
+  color: white;
+  max-width: 20px;
+  margin: 1px;
+  margin-left: 5px;
+  line-height: 20px;
+  padding: 0;
+  border-radius: 7px;
+  background-color:rgb(165, 96, 143);
+}
+
+@media (min-width:768px) {
+
+  .cuerpo{
+    margin-top: 0;
+  }
+
+  .main-productos h4.num#cantidad{
+    margin-left: 27%;
+  }
+}
+@media (min-width:1024px) {
+
+  .main-productos h4.num#cantidad{
+    margin-left: 27%;
+  }
+}

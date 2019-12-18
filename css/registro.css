@@ -1,0 +1,70 @@
+*{
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  text-decoration: none;
+  border: none;
+  outline: none;
+  box-sizing: border-box;
+}
+
+.cuerpo{
+  float: left;
+  margin-top: 120px;
+  width:100%;
+  text-align: center;
+}
+
+
+/*-- Campos a llenar -- */
+label {
+  width: 100%;
+  margin-top: 8px;
+  padding: 4px;
+  font-family: 'Quicksand', sans-serif;
+}
+
+input {
+    border-radius: 10px;
+    border: 1px solid rgb(165, 96, 143);
+    line-height: 18px;
+    padding: 3px;
+}
+
+input.check{
+  margin-top: 8px;
+  font-family: 'Quicksand', sans-serif;
+}
+select {
+  border-radius: 10px;
+  border: 1px solid rgb(165, 96, 143);
+  line-height: 18px;
+  padding: 4px;
+}
+
+button#registro {
+  color: white;
+  background-color:rgb(165, 96, 143);
+  text-align: center;
+  width: 28%;
+  margin: 8px;
+  right: 0;
+  left: 0;
+  padding: 8px;
+  border-radius: 10px;
+  font-family: 'Quicksand', sans-serif;
+  max-width: 200px;
+}
+
+textarea {
+  border-radius: 10px;
+  border: 1px solid rgb(165, 96, 143);
+  line-height: 18px;
+  padding: 3px;
+}
+
+@media (min-width:768px) {
+   .cuerpo {
+    width: 100%;
+    margin-top: 0;
+  }
