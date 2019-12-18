@@ -20,18 +20,27 @@
       @endsection
 {{-- @section('main') --}}
 <section class="video">
-  <div class="fullscreen-video">
-    <video autoplay muted loop>
+  <a href="#home"><div class="fullscreen-video">
+    <video autoplay muted>
       <source src="/img/burger0.mp4" type="video/mp4">
     </video>
-      <div class="bajar">
-      <a href="#ver-mas"><i  id="goDown" class="fas fa-angle-down" onmouseover="style.color='rgba(255,255,255,1)'" onmouseout="style.color='rgba(255,255,255,0.1)'"></i></a>
-      </div>
+  </div></a>
+</section>
+
+<section id="home">
+  <a href="#circulos">
+  <div class="foto-back">
+    <div class="text">
+    <h1 id="digi">DIGIBURGER</h1>
+    <h2>LAS MEJORES HAMBURGUESAS DE BUENOS AIRES</h2>
+    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+    </div>
   </div>
+</a>
 </section>
 
 <section id="circulos">
-  <h1 id="ver-mas">NUESTRAS BURGERS</h1>
+  <h2 id="ver-mas">NUESTRAS BURGERS</h2>
 
     <section class="main">
 

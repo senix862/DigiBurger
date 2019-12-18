@@ -1,4 +1,6 @@
-
+a:hover{
+  color: gray;
+}
 .video{
   height: 100vh;
   width: auto;
@@ -24,14 +26,6 @@
   padding: 20px;
 }
 
-.bajar{
-  height: 100vh;
-  width: 100%;
-  position: absolute;
-  top: 0;
-  left: 0;
-  z-index: 2;
-}
 
 #goDown {
   font-size: 48px;
@@ -60,11 +54,53 @@
   text-decoration: none;
 }
 
-h1#ver-mas{
+h1{
   text-align: center;
   text-decoration: none;
   border: none;
-  font-size: 40px;
+  font-size: 45px;
+  font-family: 'Alatsi', sans-serif;
+  text-decoration-color: black;
+  margin-top: 30px;
+  margin-bottom: 50px;
+}
+
+.foto-back{
+  width: 100%;
+  position: relative;
+  background-image: url("/img/back.jpg");
+  background-size: cover;
+  height: 100vh;
+}
+
+
+
+div.text{
+  position: absolute;
+  top: 30;
+  padding: 10px;
+  margin-left: 60%;
+  background-color: rgba(255,255,255,0.7);
+  z-index:5;
+  width:30%;
+}
+
+p{
+  text-align: center;
+  text-decoration: none;
+  border: none;
+  font-size: 18px;
+  font-family: 'Alatsi', sans-serif;
+  text-decoration-color: black;
+  margin-top: 15px;
+  margin-bottom: 40px;
+}
+
+h2{
+  text-align: center;
+  text-decoration: none;
+  border: none;
+  font-size: 25px;
   font-family: 'Alatsi', sans-serif;
   text-decoration-color: black;
   margin-top: 30px;
