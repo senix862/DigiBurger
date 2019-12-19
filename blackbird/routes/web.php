@@ -22,8 +22,9 @@ Route::get('/productos/{id}/editar',"ProductosController@edit")->middleware(['au
 Route::patch('/productos/{id}', 'ProductosController@update')->middleware(['auth', 'is_admin']);
 Route::delete('/productos/{id}', 'ProductosController@delete')->middleware(['auth', 'is_admin']);
 
-Route::get('/carrito', 'CarritoController@index')->middleware(['auth']);
+Route::get('/carrito', 'CarritoController@carrito')->middleware(['auth']);
 Route::post('/carrito/{id}', 'CarritoController@agregar')->middleware(['auth']);
+Route::post('/carrito/{id}/eliminar', 'CarritoController@eliminar')->middleware(['auth']);
 
 
 Route::get('/indexVideo', function () {

@@ -13,12 +13,13 @@ div.logo{
 }
 
 div.logo a.marca h3{
-  margin-left: 10px;
-  text-decoration: none;
-  font-family: 'Alatsi', sans-serif;
-  color: rgba(0,0,0,1);
-  font-size: 23;
-  font-weight: bold;
+
+      text-decoration: none;
+      padding-left: 0px;
+      margin: 5% 0px 0px 30px;
+      font-family: 'Alatsi', sans-serif;
+      font-size: 40px;
+      font-weight: bold;
 }
 
 body{
@@ -26,15 +27,21 @@ body{
     background-color: white;
     overflow-x: hidden;
 }
-
+a#ahome{
+  transition-property: all;
+  transition-delay: 1s;
+  transition: 5s;
+}
 .productos{
   margin-top: 20px;
+}
+
 }
 .container{
   width: 100%;
   padding-left: 1rem;
   padding-right: 1rem;
-  margin: auto;
+  margin: ;
   text-align: center;
 }
 
@@ -125,10 +132,6 @@ h1#ver-mas{
   margin-top: 30px;
 }
 
-@media(max-width:1080px) {
-  .container{
-
-  }
 }
 /*media queries*/
 @media (min-width:768px) {
@@ -151,6 +154,10 @@ div.burger-icon{
   color: white;
 }
   @media (min-width:1024px) {
+
+    .container{
+      margin-top: 165px;
+    }
 
     /* div.photo-container {
       width: 25%;

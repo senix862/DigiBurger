@@ -13,12 +13,13 @@
   @endsection
 
   @section('main')
+      <div class="container">
 
               <h2>{{$producto->nombre}}</h2>
               <img src="/storage/{{$producto->imagen}}" alt="" width="100%">
                   <div class="form-group">
                     <label for="rating">precio</label>
-                    {{$producto->rating}}
+                    {{$producto->precio}}
                   </div>
                   <div class="form-group">
                     <label for="awards">Calorias</label>
@@ -45,5 +46,6 @@
 
                           <button type="submit" class="btn btn-danger" name="button">Eliminar</button>
                       </form>
+                  </div>
                   </div>
   @endsection
