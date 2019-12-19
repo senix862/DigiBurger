@@ -6,8 +6,21 @@
   border: none;
   outline: none;
   box-sizing: border-box;
-
 }
+
+div.logo{
+  float: left;
+}
+
+div.logo a.marca h3{
+  margin-left: 10px;
+  text-decoration: none;
+  font-family: 'Alatsi', sans-serif;
+  color: rgba(0,0,0,1);
+  font-size: 23;
+  font-weight: bold;
+}
+
 body{
     width: 100%;
     background-color: white;
@@ -124,17 +137,24 @@ h1#ver-mas{
     margin-top: 0;
   }
 
-  div.photo-container {
+  /* div.photo-container {
     float: left;
     width: 48%;
-  }
+  } */
 }
 
+div.burger-icon{
+  float: right;
+  margin-right: 10px;
+  margin-top: 10px;
+  font-size: 42px;
+  color: white;
+}
   @media (min-width:1024px) {
 
-    div.photo-container {
+    /* div.photo-container {
       width: 25%;
-    }
+    } */
     #video{
       left: 0;
       top: 0;
