@@ -27,57 +27,9 @@ body{
     background-color: white;
     overflow-x: hidden;
 }
-a#ahome{
-  transition-property: all;
-  transition-delay: 1s;
-  transition: 5s;
-}
-.productos{
-  margin-top: 20px;
-}
-
-}
-.container{
-  width: 100%;
-  padding-left: 1rem;
-  padding-right: 1rem;
-  margin: ;
-  text-align: center;
-}
-
-#myVideo {
-  position: fixed;
-  right: 0;
-  bottom: 0;
-  min-width: 100%;
-  min-height: 100%;
-  overflow: hidden;
-}
-
-
 
 /*Estilo del boton*/
-#myBtn {
-  width: 200px;
-  font-size: 18px;
-  padding: 10px;
-  border: none;
-  background: #000;
-  color: #fff;
-  cursor: pointer;
-}
 
-#myBtn:hover {
-  background: #ddd;
-  color: black;
-}
-
-#myVideo {
-  right: 0;
-  bottom: 0;
-  width: 100%;
-  z-index: 1;
-}
 
 .content {
   /* position: fixed; */
@@ -135,16 +87,6 @@ h1#ver-mas{
 }
 /*media queries*/
 @media (min-width:768px) {
-   .cuerpo {
-    width: 100%;
-    margin-top: 0;
-  }
-
-  /* div.photo-container {
-    float: left;
-    width: 48%;
-  } */
-}
 
 div.burger-icon{
   float: right;
@@ -158,10 +100,6 @@ div.burger-icon{
     .container{
       margin-top: 165px;
     }
-
-    /* div.photo-container {
-      width: 25%;
-    } */
     #video{
       left: 0;
       top: 0;

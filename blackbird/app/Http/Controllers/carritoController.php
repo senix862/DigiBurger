@@ -6,6 +6,7 @@ use Illuminate\Http\Request;
 use App\Carrito;
 use Auth;
 use App\Producto;
+use App\User;
 
 class carritoController extends Controller
 {
@@ -30,9 +31,8 @@ class carritoController extends Controller
 
     // si esta el producto sumo la cantidad
     if ($producto) {
-      $id_carrito=$user->carrito->first(function (Producto $producto) use ($producto_id) {
-          return $producto_id == $producto->id;});
-      $carrito = Carruto::find($id_carrito)
+      $id_carrito=$user->carrito->id;
+      $carrito = Carrito::find($id_carrito);
       $carrito->cantidad = $carrito->cantidad + 1;
       $carrito->save();
       return redirect('/carrito')

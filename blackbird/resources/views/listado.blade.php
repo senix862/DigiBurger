@@ -15,7 +15,7 @@
    <article class="nuevas" id="hamburguesas">
        <div class="hamburguesas">
           <div class="titulo-nav">
-               <h3>Hamburguesas en Black-Bird</h3>
+               <h1>Nuestras BURGERS</h1>
                <div>
              {{-- @if(Auth::user()->admin)
                  <a href="/products/nuevo" class="btn btn-primary">Nueva Burger</a>
@@ -47,28 +47,40 @@
 
         <ul class="ch-grid">
 @foreach ($productos as $producto)
-<li>
-  <div class="ch-item ch-img-1">
+<li id="burgers">
+  <br>
+
+  <div class="ch-item ch-img-1" style="background-image: url('/storage/{{$producto->imagen}}')">
     <div class="ch-info-wrap">
       <div class="ch-info">
-        <div class="ch-info-front ch-img-1"></div>
+        <div class="ch-info-front ch-img-1"style="background-image: url('/storage/{{$producto->imagen}}')"></div>
         <div class="ch-info-back">
           <h3>{{$producto->nombre}}</h3>
           <p>{{ $producto->getCategoriaName() }}</p>
-          <p>Precio: {{  $producto->precio }}</p>
+          <p> </p>
+          <h1 style="color=black;    position: relative;
+    top: -58px;">Precio: ${{  $producto->precio }}</h1>
         </div>
       </div>
     </div>
   </div>
+  <br>
+  <br>
+  <br>
+  <br>
+  <br>
+  <a class="btn btn-primary" href="/productos/{{$producto->id}}">Ver Mas</a>
+  <form class="btn btn-success" action="/carrito/{{$producto->id}}" method="post">
+      @csrf
+      <button type="submit" class="btn btn-success">
+          Agregar al carrito
+      </button>
+  </form>
+
+  @if(Auth::user()->is_admin)
+  <a class="btn btn-warning" href="/productos/{{$producto->id}}/editar">Editar</a>
+  @endif
 </li>
-<form class="form-add-my-list" action="/carrito/{{$producto->id}}" method="post">
-    @csrf
-    <button type="submit" class="no-button">
-        <img src="/images/heart_no_like.png" class="like">
-    </button>
-</form>
-<a class="btn btn-primary" href="/productos/{{$producto->id}}">Ver Mas</a>
-<a class="btn btn-success" href="/productos/{{$producto->id}}/editar">Editar</a>
 @endforeach
 </ul>
 
