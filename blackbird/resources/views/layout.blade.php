@@ -49,11 +49,13 @@
       @auth
           <a href="/carrito"><li>Carrito</li></a>
           <a href="/perfil"><li>Mi Perfil</li></a>
-          <a href="/products/nuevo"><li>Agregar Producto</li></a>
           <a href="#" onclick="event.preventDefault();document.getElementById('logout-form').submit();"><li>Logout</li></a>
           <form id="logout-form" action="{{ route('logout') }}" method="POST" style="dislpay:none">
               @csrf
           </form>
+          @if(Auth::user()->is_admin)
+          <a href="/products/nuevo"><li>Agregar Producto</li></a>
+          @endif
       @else
           <a href="login"><li>Ingresar</li></a>
           <a href="register"><li>Registrarme</li></a>
@@ -123,8 +125,8 @@
 
         <div class="cierre">
           <div class="ancla">
-            <a href="contacto.php">CONTACTO</a>
-            <a href="faq.php">PREGUNTAS FRECUENTES</a>
+            <a href="/contacto">CONTACTO</a>
+            <a href="/faq">PREGUNTAS FRECUENTES</a>
           </div>
           <div class="redes">
               <a href="https://www.facebook.com" target="_blank"><i class="fab fa-facebook-square"></i></a>
