@@ -1,23 +1,26 @@
+#loading{
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100vh;
+  background: #fff url('https://media1.tenor.com/images/708becfd50dfd2384d7e4f4c6aebada9/tenor.gif') no-repeat center;
+  z-index: 9999;
+}
+
 a:hover{
   color: white;
   text-decoration: none;
 }
 .video{
-  height: 100vh;
-  width: auto;
+  width: 100%;
   display: flex;
   align-items: center;
   color: #fff;
 }
-
-/* #myVideo {
-  position: fixed;
-  right: 0;
-  bottom: 0;
+.video video{
   width: 100%;
-  z-index: 1;
-} */
-
+}
 .content {
   position: fixed;
   bottom: 0;
@@ -28,32 +31,21 @@ a:hover{
 }
 
 
-#goDown {
-  font-size: 48px;
-  margin-top: 90vh;
-  cursor: pointer;
-}
-
-.fullscreen-video{
-  position: absolute;
-  top: 0;
-  left: 0;
+#home{
+  position: relative;
   width: 100%;
-  height: 100vh;
-  overflow: hidden;
-}
- .fullscreen-video video{
-  min-width: 100%;
-  min-height: 100%;
+  padding: 0;
+  margin: 0;
+  top: 0;
 }
 
-.myBtn{
-  background: #34b3a8;
-  color: #fff;
-  font-size: 1.2em;
-  padding: 1em 2em;
-  text-decoration: none;
+.foto-back{
+  width: 100%;
+  background-image: url("/img/back.jpg");
+  background-size: cover;
+  height: 100vh;
 }
+
 
 h1{
   text-align: center;
@@ -65,16 +57,6 @@ h1{
   margin-top: 30px;
   margin-bottom: 50px;
 }
-
-.foto-back{
-  width: 100%;
-  position: relative;
-  background-image: url("/img/back.jpg");
-  background-size: cover;
-  height: 100vh;
-}
-
-
 
 div.text{
   position: absolute;

@@ -2,18 +2,23 @@
 
 @section('css')
 <link rel="stylesheet" href="/css/styles.css">
+<link rel="shortcut icon" href="../favicon.ico">
+<link rel="stylesheet" type="text/css" href="/css/demo.css">
+<link rel="stylesheet" type="text/css" href="/css/common.css">
+<link rel="stylesheet" type="text/css" href="/css/style4.css">
+<link rel="stylesheet" href="/css/fontawesome/css/all.css">
 @endsection
 
 @section('main')
 
-<section class="principal">
+<section class="container">
    <article class="nuevas" id="hamburguesas">
        <div class="hamburguesas">
           <div class="titulo-nav">
-               <h3>Hamburguesas en Black-Bird</h3>
+               <h1>Nuestras BURGERS</h1>
                <div>
              {{-- @if(Auth::user()->admin)
-                 <a href="productos/nuevo" class="btn btn-primary">Nueva Burger</a>
+                 <a href="/products/nuevo" class="btn btn-primary">Nueva Burger</a>
              @endif --}}
                </div>
          </div>
@@ -38,31 +43,55 @@
                 </div>
             @endif
          </div>
+         <section class="main">
 
-         <div class="card-group">
-
+        <ul class="ch-grid">
 @foreach ($productos as $producto)
+<li id="burgers">
+  <br>
 
-    <div class="card card-peli">
-      <img class="fondo-bur" src="/storage/{{$producto->imagen}}">
-      <div class="card-header">{{ $producto->nombre }}</div>
-      <div class="card-body">
-        <p class="card-text">{{ $producto->getCategoriaName() }}</p>
-        <p class="card-text">Rating: {{  $producto->calorias }}</p>
-        <p class="card-text">Awards: {{  $producto->precio }}</p>
-        <p class="card-text">
-          <a class="btn btn-primary" href="/productos/{{$producto->id}}">Ver Mas</a>
-          <a class="btn btn-success" href="/productos/{{$producto->id}}/editar">Editar</a>
-          </p>
+  <div class="ch-item ch-img-1" style="background-image: url('/storage/{{$producto->imagen}}')">
+    <div class="ch-info-wrap">
+      <div class="ch-info">
+        <div class="ch-info-front ch-img-1" style="background-image: url('/storage/{{$producto->imagen}}')"></div>
+        <div class="ch-info-back">
+          <h3>{{$producto->nombre}}</h3>
+          <p>{{ $producto->getCategoriaName() }}</p>
+          <p> </p>
+          <h1 style="color=black;    position: relative;
+    top: -58px;">Precio: ${{  $producto->precio }}</h1>
+        </div>
       </div>
     </div>
+  </div>
+  <br>
+  <br>
+  <br>
+  <br>
+  <br>
+  <a class="btn btn-primary" href="/productos/{{$producto->id}}">Ver Mas</a>
+  <form class="btn btn-success" action="/carrito/{{$producto->id}}" method="post">
+      @csrf
+      <button type="submit" class="btn btn-success">
+          Agregar al carrito
+      </button>
+  </form>
+
+  @if(Auth::user()->is_admin)
+  <a class="btn btn-warning" href="/productos/{{$producto->id}}/editar">Editar</a>
+  @endif
+</li>
 @endforeach
-          </div>
+</ul>
 
 
-       </div>
+</section>
    </article>
 </section>
 
-
+<script type="text/javascript" src="/js/modernizr.custom.79639.js"></script>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
+<script src="/js/jquery.dlmenu.js"></script>
+<script src="/js/pagetransitions.js"></script>
+<script src="/js/modernizr.custom.js"></script>
   @endsection
