@@ -16,7 +16,7 @@
       <div class="container">
 
               <h2>{{$producto->nombre}}</h2>
-              <img src="/storage/{{$producto->imagen}}" alt="" width="100%">
+              <img src="/storage/{{$producto->imagen}}" alt="" style="border-radius:50%;"width="45%">
                   <div class="form-group">
                     <label for="rating">precio</label>
                     {{$producto->precio}}
@@ -27,7 +27,7 @@
                   </div>
                   <div class="form-group">
                     <label for="length">Descuento:</label>
-                    {{$producto->descuento}}
+                    {{$producto->descuento}} %
                   </div>
 
                   <div class="form-group">

@@ -10,11 +10,17 @@ use App\User;
 
 class carritoController extends Controller
 {
+  public function __construct()
+  {
+    if(!\Session::has('carrito')) \Session::put('carrito', array());
+  }
+
   public function carrito()
   {
+
       $productos = \Auth::user()->carrito;
 
-      $carrito = Carrito::all();
+      $carrito = \Session::get('carrito');
 
       return view('carrito', compact(['productos','carrito']));
   }
@@ -42,6 +48,52 @@ class carritoController extends Controller
 
     //uso la relacion carrito
     $user->carrito()->attach($producto_id);
+    public function agregar($producto_id)
+    {
+      // $imagen = $data['imagen']->store('public');
+      // $imagen= basename($imagen);
+      $reglas = [
+        "nombr" => "required|string",
+        "precio" => "required|numeric",
+        "descuento" => "numeric|between:0,99",
+        "calorias" => "integer|min:0",
+        "categoria_id" => "required",
+        "imagen"=> "required|file",
+        "ingredientes" => "required|string"
+      ];
+      $mesagge= [
+        'required' => 'Completa este campo',
+        'nombre.string' => 'El titulo debe ser un texto',
+        'numeric' => 'Debe ser un numero',
+        'between' => 'Debe de estar entre :min y :max',
+        'integer' => 'Debe ser un numero',
+
+      ];
+      $this->validate($req, $reglas, $mesagge);
+
+      $prodNuevo = new Pedito;
+      $imagenF = '';
+      if ($req->file('imagen')) {
+        $imagen = $req->file('imagen')->store('public');
+        $imagenF= basename($imagen);
+      }
+
+      $prodNuevo->cantidad = $req["nombr"];
+      $prodNuevo->precio = $req["precio"];
+      $prodNuevo->descuento = $req["descuento"];
+      $prodNuevo->calorias = $req["calorias"];
+      $prodNuevo->categoria_id = $req["categoria_id"];
+      $prodNuevo->imagen = $imagenF;
+      $prodNuevo->ingredientes = $req["ingredientes"];
+
+      $prodNuevo->save();
+
+      return redirect('/productos')
+          ->with('status', 'Creaste una hamburguesa nueva!!!')
+          ->with('operation', 'success');
+    }
+
+
     //redirijo
     return redirect('/productos')
         ->with('status', 'Agregaste un producto exitosamente :)')

@@ -25,10 +25,10 @@
          <div class="sub-titulo">
              <div class="ordenamiento">
                <ol class="breadcrumb">
-                <li class="breadcrumb-item"><a href="?orden=title">Nombre</a></li>
-                <li class="breadcrumb-item"><a href="?orden=genero">Categoria</a></li>
-                <li class="breadcrumb-item "><a href="?orden=rating">Precio</a></li>
-                <li class="breadcrumb-item active"><a href="?orden=awards">Calorias</a></li>
+                <li class="breadcrumb-item"><a href="?orden=nombre">Nombre</a></li>
+                <li class="breadcrumb-item"><a href="?orden=categoria">Categoria</a></li>
+                <li class="breadcrumb-item "><a href="?orden=precio">Precio</a></li>
+                <li class="breadcrumb-item active"><a href="?orden=calorias">Calorias</a></li>
               </ol>
              </div>
              <nav >
