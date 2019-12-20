@@ -8,6 +8,15 @@
   outline: none;
   box-sizing: border-box;
 }
+
+main{
+background-color: white;
+}
+
+footer{
+background-color: white;
+}
+
 .chatbot{
   width:80vw;
   height: 68vh;
@@ -133,7 +142,6 @@ body{
   background-size: cover;;
 }
 .fondo{
-  background-color: black;
   height: 22vh;
   z-index: -100;
   display: flex;
