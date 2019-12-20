@@ -31,8 +31,8 @@ class carritoController extends Controller
 
     // si esta el producto sumo la cantidad
     if ($producto) {
-      $cantidades= 1;
-      return redirect('/carrito', compact('cantidades'))
+
+      return redirect('/carrito')
           ->with('status', 'Sumaste otra hamburguesa en tu carrito')
           ->with('operation', 'success');
     }

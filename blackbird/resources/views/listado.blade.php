@@ -2,6 +2,7 @@
 
 @section('css')
 <link rel="stylesheet" href="/css/styles.css">
+  <link rel="stylesheet" href="/css/index.css">
 <link rel="shortcut icon" href="../favicon.ico">
 <link rel="stylesheet" type="text/css" href="/css/demo.css">
 <link rel="stylesheet" type="text/css" href="/css/common.css">

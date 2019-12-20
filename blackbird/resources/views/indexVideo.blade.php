@@ -28,6 +28,11 @@
     </video>
   </div></a>
 </section>
+<section class="imagenMobile">
+  <a data-scroll id="ahome" href="#home"><div class="">
+
+  </div></a>
+</section>
 <section id="home">
   <a data-scroll href="#circulos">
   <div class="foto-back">

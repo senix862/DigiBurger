@@ -6,7 +6,12 @@
 .datos a:hover{
   color: blue;
 }
-
+.registroExitoso{
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  flex-direction: row-reverse;
+}
 .mapa{
   text-align: center;
 }
@@ -83,10 +88,125 @@ footer{
     color: rgba(7, 0, 0, 0.7);
     position: fixed;
 }
-@media (min-width: 768px){
-  .redesSociales{
+/* menuNavMobile */
+.menu-mobile{
+  display: none;
+}
+.menu-mobile nav {
+	width:100%;
+	max-width:1000px;
+	margin:20px auto;
+  background-color:rgba(0,0,0,0.2);
+}
+
+.menu-mobile .menu_bar {
+	display:none;
+  width: 100%;
+}
+
+.menu-mobile nav ul {
+	overflow:hidden;
+	list-style:none;
+}
+
+.menu-mobile nav ul li {
+	float:left;
+}
+
+.menu-mobile nav ul li a {
+	color:#fff;
+	padding:20px;
+	display:block;
+	text-decoration:none;
+}
+
+.menu-mobile nav ul li span {
+	margin-right:10px;
+}
+
+.menu-mobile nav ul li a:hover {
+	background-color: rgba(0,0,0,0.5);
+}
+
+.menu-mobile section {
+	padding:20px;
+}
+
+@media screen and (max-width:425px ) {
+  .menu-mobile{
+    display: block;
+    position: fixed;
+    top: 0;
+    width: 75%;
+    z-index: 9999!important;
+  }
+	.menu-mobile nav {
+		width:100%;
+		left:-100%;
+		margin:0;
+		position: fixed;
+	}
+
+	.menu-mobile nav ul li {
+    text-align: center;
+		display:block;
+		float:none;
+    width: 100%;
+
+	}
+
+	.menu-mobile .menu_bar {
+
+		display:block;
+		width:100%;
+		background-color: rgba(0,0,0,0.2);
+	}
+
+	.menu-mobile .menu_bar .bt-menu {
+		display:block;
+		padding:20px;
+		background-color: rgba(0,0,0,0.1);
+		color:#fff;
+		text-decoration:none;
+    font-family: 'Alatsi', sans-serif;
+		font-weight: bold;
+		font-size:25px;
+		-webkit-box-sizing:border-box;
+		-moz-box-sizing:border-box;
+		box-sizing:border-box;
+	}
+
+	.menu-mobile .menu_bar span {
+		float:right;
+		font-size:40px;
+	}
+}
+@media (max-width: 425px){
+  body{
+    width: 100vw;
+  }
+  .imagenMobile{
+    display: block;
+  }
+  .encabezado a {
     margin-left: 35%;
     width: 30%;
+  }
+  .encabezado {
+  display: none;
+  }
+  .dropdown show{
+    position: fixed;
+    top: 0;
+    width: 100%;
+    z-index: 9999!important;
+    transition: top 0.5s;
+  }
+  .video{
+    display: none;
+  }
+  #home{
+    margin-top: 100vh;
   }
 }
 @media (min-width: 1024px){

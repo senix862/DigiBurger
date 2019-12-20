@@ -7,7 +7,7 @@
   <link rel="stylesheet" href="/css/index.css">
   <link rel="stylesheet" href="/css/videohome.css">
   <link rel="stylesheet" href="/css/fontawesome/css/all.css">
-    <link rel="stylesheet" href="/css/registro.css">
+  <link rel="stylesheet" href="/css/registro.css">
   @endsection
 
   @section('title')
@@ -20,6 +20,14 @@
 
 @section('main')
 
-Usted se ha registrado exitosamente!
+  <div class="registroExitoso" style="padding:15%;">
+    <h1>¡Usted se ha registrado exitosamente!</h1>
+    <img src="/img/burgerRegistro.png" alt="" style="width:20%;">
+  </div>
+  <div class="registroExitoso">
+    <a style=""class="btn btn-success" href="/productos">Veamos las hamburguesas ahora :)</a>
+  </div>
 
-  @endsection
+
+
+@endsection

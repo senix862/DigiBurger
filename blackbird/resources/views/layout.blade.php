@@ -1,6 +1,7 @@
 <!DOCTYPE html>
 <html lang="es" dir="ltr">
   <head>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
     <link rel="stylesheet" href="css/fontawesome/css/all.css">
     <link href="https://fonts.googleapis.com/css?family=Alatsi&display=swap" rel="stylesheet">
     <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
@@ -66,19 +67,46 @@
     </nav>
   </section>
 </div>
+<div class="menu-mobile">
+  <div class="menu_bar">
+			<a href="#" class="bt-menu"><span><i class="fas fa-hamburger"></i></span>  DIGIBURGER</a>
+  </div>
+
+		<nav clas="mobile">
+			<ul>
+				  <li><a href="/productos">Nuestras Burgers</a></li>
+            <li><a href="/faq">Preguntas</a></li>
+            <li><a href="/contacto">Contacto</a></li>
+            @auth
+              <li>  <a href="/carrito">Carrito</a></li>
+                <li><a href="/perfil">Mi Perfil</a></li>
+                <li><a href="#" onclick="event.preventDefault();document.getElementById('logout-form').submit();">Logout</a></li>
+                <form id="logout-form" action="{{ route('logout') }}" method="POST" style="dislpay:none">
+                    @csrf
+                </form>
+                @if(Auth::user()->is_admin)
+                <li><a href="/products/nuevo">Agregar Producto</a></li>
+                @endif
+            @else
+                <li><a href="login">Ingresar</a></li>
+                <li><a href="register">Registrarme</a></li>
+            @endauth
+			</ul>
+		</nav>
+</div>
+{{-- <div class="component">
+  <button class="cn-button" id="cn-button">Burger</button>
+  <div class="cn-wrapper" id="cn-wrapper">
+    <ul>
+      <li><a href="burger"><span><i class="fas fa-home"></i></span></a></li>
+      <li><a href="/productos"><span><i class="fas fa-hamburger"></i></span></a></li>
+      <li><a href="/faq"><span><i class="fas fa-question"></i></span></a></li>
+      <li><a href="#"><i class="fas fa-user-alt"></i></i></a></li>
+      <li><a href="/lista"><span><i class="fas fa-heart"></i></span></a></li>
+      <li><a href="{{ route('logout') }}" onclick="event.preventDefault(); document.getElementById('logout-form').submit();">"><i class="fas fa-sign-out-alt"></i></a></li>
+    </ul>
+  </div> --}}
 </header><!-- /encabezado -->
-        {{-- <div class="component">
-          <button class="cn-button" id="cn-button">Burger</button>
-          <div class="cn-wrapper" id="cn-wrapper">
-            <ul>
-              <li><a href="burger"><span><i class="fas fa-home"></i></span></a></li>
-              <li><a href="/productos"><span><i class="fas fa-hamburger"></i></span></a></li>
-              <li><a href="/faq"><span><i class="fas fa-question"></i></span></a></li>
-              <li><a href="#"><i class="fas fa-user-alt"></i></i></a></li>
-              <li><a href="/lista"><span><i class="fas fa-heart"></i></span></a></li>
-              <li><a href="{{ route('logout') }}" onclick="event.preventDefault(); document.getElementById('logout-form').submit();">"><i class="fas fa-sign-out-alt"></i></a></li>
-             </ul>
-          </div> --}}
           @yield('main')
       <footer>
         <div class="cierre">
@@ -103,5 +131,6 @@
 	var scroll = new SmoothScroll('a[href*="#"]',{speed: 1200});
 </script>
       		<script src="/js/header.js"></script>
+          <script src="/js/navMobile.js"></script>
       <script src="/js/polyfills.js"></script>
       <script src="/js/demo2.js"></script>

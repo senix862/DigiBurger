@@ -45,7 +45,14 @@ a:hover{
   background-size: cover;
   height: 100vh;
 }
-
+.imagenMobile{
+  display: none;
+  width: 100%;
+  background-image: url("/img/burgerMobile.jpg");
+  background-size: contain;
+  background-repeat: no-repeat;
+  height: 100vh;
+}
 
 h1{
   text-align: center;

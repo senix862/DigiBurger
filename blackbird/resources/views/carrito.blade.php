@@ -1,11 +1,11 @@
 @extends('layout')
 
   @section('css')
-    <link rel="stylesheet" href="/css/style.css">
+    <link rel="stylesheet" href="/css/index.css">
   @endsection
 
   @section('title')
-    Detalle
+    Mi Carrito
   @endsection
 
   @section('texto')
@@ -13,10 +13,11 @@
   @endsection
 
   @section('main')
+
       <div class="container">
         <div class="card-group">
 <?php $cantidad=1; ?>
-@foreach ($productos as $producto)
+@forelse ($productos as $producto)
 
    <div class="card card-peli">
      <img class="fondo-bur" src="/storage/{{$producto->imagen}}" style="border-radius=50%" width="30%">
@@ -43,7 +44,15 @@
        </p>
      </div>
    </div>
-@endforeach
+   @empty
+   <div class="registroExitoso" style="padding:15%;">
+     <h1>¡TU CARRITO ESTA VACÍO!</h1>
+     <img src="/img/hamburguesaTriste.jpg" alt="" style="width:20%;">
+   </div>
+   <div class="registroExitoso">
+     <a style=""class="btn btn-success" href="/productos">Volvamos al listado :)</a>
+   </div>
+@endforelse
          </div>
           <div class="card-header">TOTAL: $
             @foreach ($productos as $producto)
@@ -52,4 +61,6 @@
           </div>
 
       </div>
+
+
   @endsection
