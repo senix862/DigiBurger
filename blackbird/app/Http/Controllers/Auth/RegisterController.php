@@ -70,7 +70,7 @@ class RegisterController extends Controller
      */
     protected function create(array $data)
     {
-        $imagen='';
+        $imagen='/img/user.png';
         if(isset($data['avatar'])){
           $imagen = $data['avatar']->store('public');
           $imagen= basename($imagen);

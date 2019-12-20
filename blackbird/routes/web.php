@@ -13,6 +13,8 @@
 
 Route::get('/burger','ProductosController@listado');
 
+Route::get('/perfil','UsuariosController@perfil')->middleware(['auth']);;
+
 Route::get('/productos', 'ProductosController@show');
 Route::get('/products/nuevo', 'ProductosController@new')->middleware(['auth', 'is_admin']);
 Route::post('/products/nuevo', 'ProductosController@agregar')->middleware(['auth', 'is_admin']);

@@ -22,6 +22,9 @@
       <link href='http://fonts.googleapis.com/css?family=Open+Sans:300,700' rel='stylesheet' type='text/css'>
       <script src="/js/smooth-scroll.min.js"></script>
       <script src="https://cdn.jsdelivr.net/gh/cferdinandi/smooth-scroll/dist/smooth-scroll.polyfills.min.js"></script>
+      <script src"/js/navegacion/nav.js">
+
+      </script>
 
       <title>@yield('title')</title>
   </head>
@@ -141,7 +144,7 @@
       <script src="https://ajax.googleapis.com/ajax/libs/dojo/1.13.0/dojo/dojo.js"></script>
       <script src="https://ajax.googleapis.com/ajax/libs/d3js/5.14.2/d3.min.js"></script>
       <script>
-	var scroll = new SmoothScroll('a[href*="#"]');
+	var scroll = new SmoothScroll('a[href*="#"]',{speed: 1200});
 </script>
       		<script src="/js/header.js"></script>
       <script src="/js/polyfills.js"></script>
