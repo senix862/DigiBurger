@@ -2,9 +2,7 @@
 
   <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
   <link rel="shortcut icon" href="../favicon.ico">
-  <link rel="stylesheet" type="text/css" href="/css/demo.css">
   <link rel="stylesheet" type="text/css" href="/css/common.css">
-  <link rel="stylesheet" type="text/css" href="/css/style4.css">
   <link rel="stylesheet" href="/css/index.css">
   <link rel="stylesheet" href="/css/videohome.css">
   <link rel="stylesheet" href="/css/fontawesome/css/all.css">

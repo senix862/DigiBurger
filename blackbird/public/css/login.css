@@ -15,19 +15,22 @@
   text-align: center;
 }
 
-
-/* Campos a llenar */
+form {
+  text-align: center;
+  display: inline-block;
+  max-width: 700px;
+}
 
 label {
   width: auto;
   margin-top: 12px;
   padding: 4px;
-  font-family: 'Quicksand', sans-serif;
+  font-family: 'Alatsi', sans-serif;
 }
 
 input {
     border-radius: 10px;
-    border: 1px solid rgb(165, 96, 143);
+    border: 1px solid gray;
     line-height: 20px;
     padding: 3px;
 }
@@ -41,16 +44,16 @@ input#remember{
 }
 button#ingresar{
   color: white;
-  background-color:rgb(165, 96, 143);
+  background-color:rgba(0, 0, 0, 0.8);
   text-align: center;
-  width: 28%;
-  max-width: 200px;
-  margin: 10px;
+  width: 120px;
+  margin: 8px;
   right: 0;
   left: 0;
   padding: 8px;
   border-radius: 10px;
-  font-family: 'Quicksand', sans-serif;
+  font-family: 'Alatsi', sans-serif;
+  text-transform: uppercase;
 }
 
 .button{
