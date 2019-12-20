@@ -40,6 +40,7 @@ Route::get('/productosCate', function () {
 Route::get('/faq', function () {
     return view('faq');
 });
+Route::post('/faq', 'FaqController@bot');
 
 Route::get('/registrocompleto', function () {
     return view('registrocompleto');
