@@ -24,14 +24,14 @@
 
 
 <section class="video">
-  <a id="ahome" href="#home"><div class="fullscreen-video">
+  <a data-scroll id="ahome" href="#home"><div class="fullscreen-video">
     <video autoplay muted>
-      <source src="/img/burger0.mp4" type="video/mp4">
+      <source src="/img/burger1912.mp4" type="video/mp4">
     </video>
   </div></a>
 </section>
 <section id="home">
-  <a href="#circulos">
+  <a data-scroll href="#circulos">
   <div class="foto-back">
     <div class="text">
     <h1 id="digi">DIGIBURGER</h1>

@@ -13,13 +13,14 @@ a:hover{
   text-decoration: none;
 }
 .video{
-  height: 80vh;
-  width: auto;
+  width: 100%;
   display: flex;
   align-items: center;
   color: #fff;
 }
-
+.video video{
+  width: 100%;
+}
 .content {
   position: fixed;
   bottom: 0;
@@ -29,20 +30,9 @@ a:hover{
   padding: 20px;
 }
 
-.fullscreen-video{
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 100%;
-  overflow: hidden;
-}
- .fullscreen-video video{
-  min-width: 100%;
-  min-height: 100%;
-}
 
 #home{
-  position: abso;
+  position: relative;
   width: 100%;
   padding: 0;
   margin: 0;
@@ -51,7 +41,6 @@ a:hover{
 
 .foto-back{
   width: 100%;
-  position: relative;
   background-image: url("/img/back.jpg");
   background-size: cover;
   height: 100vh;

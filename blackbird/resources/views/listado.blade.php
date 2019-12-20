@@ -53,7 +53,7 @@
   <div class="ch-item ch-img-1" style="background-image: url('/storage/{{$producto->imagen}}')">
     <div class="ch-info-wrap">
       <div class="ch-info">
-        <div class="ch-info-front ch-img-1"style="background-image: url('/storage/{{$producto->imagen}}')"></div>
+        <div class="ch-info-front ch-img-1" style="background-image: url('/storage/{{$producto->imagen}}')"></div>
         <div class="ch-info-back">
           <h3>{{$producto->nombre}}</h3>
           <p>{{ $producto->getCategoriaName() }}</p>

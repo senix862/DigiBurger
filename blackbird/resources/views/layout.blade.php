@@ -18,12 +18,15 @@
       <link href="https://fonts.googleapis.com/css?family=Anton&display=swap" rel="stylesheet">
       <link href="https://fonts.googleapis.com/css?family=Quicksand&display=swap" rel="stylesheet">
       <link href='http://fonts.googleapis.com/css?family=Open+Sans:300,700' rel='stylesheet' type='text/css'>
+      <script src="/js/smooth-scroll.min.js"></script>
+      <script src="https://cdn.jsdelivr.net/gh/cferdinandi/smooth-scroll/dist/smooth-scroll.polyfills.min.js"></script>
+
       <title>@yield('title')</title>
   </head>
   <body>
 {{-- Menu Nuevo con Js --}}
 <header>
-<div class="encabezado">
+<div id="encabezado" class="encabezado">
   <section class="color-1">
     <div class="logo">
       <a href="/burger" class="marca">
@@ -112,9 +115,8 @@
         </ul>
       </div>
       -->
-      <div class="container">
           @yield('main')
-      </div>
+
 
 
       <footer>
@@ -132,9 +134,13 @@
         </div>
 
       </footer>
-      <a id="volver" href="#"><i class="
+      <a data-scroll id="volver" href="#"><i class="
       fas fa-arrow-circle-up"></i></a>
-
+      <script src="https://ajax.googleapis.com/ajax/libs/dojo/1.13.0/dojo/dojo.js"></script>
+      <script src="https://ajax.googleapis.com/ajax/libs/d3js/5.14.2/d3.min.js"></script>
+      <script>
+	var scroll = new SmoothScroll('a[href*="#"]');
+</script>
       		<script src="/js/header.js"></script>
       <script src="/js/polyfills.js"></script>
       <script src="/js/demo2.js"></script>
