@@ -1,7 +1,7 @@
 @extends('layout')
 
   @section('css')
-    <link rel="stylesheet" href="/css/registro.css">
+    <link rel="stylesheet" href="/css/contacto.css">
   @endsection
 
   @section('title')
@@ -65,7 +65,7 @@
     </div>
     <div class="form-group">
       <label for="ingredientes">Descripción: </label>
-      <input type="string" class="form-control @error('ingredientes') is-invalid @enderror" id="ingredientes" name="ingredientes"  value="{{old('ingredientes')}}">
+      <textarea type="string" class="form-control @error('ingredientes') is-invalid @enderror" id="ingredientes" name="ingredientes"  value="{{old('ingredientes')}}">
       @error('ingredientes')
         <span class='invalid-feedback' role='alert'>
           <strong>{{ $message }}</strong>
