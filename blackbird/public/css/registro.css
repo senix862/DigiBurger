@@ -18,51 +18,56 @@
 
 /*-- Campos a llenar -- */
 
-form{
+form {
   text-align: center;
+  display: inline-block;
+  max-width: 1000px;
 }
+
 label {
   width: 100%;
   margin-top: 8px;
   padding: 4px;
-  font-family: 'Quicksand', sans-serif;
+  font-family: 'Alatsi', sans-serif;
 }
 
 input {
     border-radius: 10px;
-    border: 1px solid rgb(165, 96, 143);
+    border: 1px solid gray;
     line-height: 18px;
     padding: 3px;
 }
 
 input.check{
   margin-top: 8px;
-  font-family: 'Quicksand', sans-serif;
+  font-family: 'Alatsi', sans-serif;
 }
 select {
   border-radius: 10px;
-  border: 1px solid rgb(165, 96, 143);
+  border: 1px solid gray;
   line-height: 18px;
   padding: 4px;
 }
 
 button#registro {
   color: white;
-  background-color:rgb(165, 96, 143);
+  background-color:rgba(0, 0, 0, 0.8);
   text-align: center;
   width: 28%;
   margin: 8px;
   right: 0;
   left: 0;
   padding: 8px;
+  width: 120px;
   border-radius: 10px;
-  font-family: 'Quicksand', sans-serif;
+  font-family: 'Alatsi', sans-serif;
   max-width: 200px;
+  text-transform: uppercase;
 }
 
 textarea {
   border-radius: 10px;
-  border: 1px solid rgb(165, 96, 143);
+  border: 1px solid gray;
   line-height: 18px;
   padding: 3px;
 }

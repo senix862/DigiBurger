@@ -8,14 +8,10 @@
   box-sizing: border-box;
 }
 
-.cuerpo{
+form{
   float: left;
   margin-top: 110px;
   width: 100%;
-  text-align: center;
-}
-
-.container{
   text-align: center;
 }
 
@@ -23,42 +19,48 @@
 label {
   float: left;
   width: 100%;
-  margin-top: 8px;
+  margin-top: 10px;
   padding: 3px;
-  font-family: 'Quicksand', sans-serif;
+  font-family: 'Alatsi', sans-serif;
+  margin-bottom: 10px;
 }
 
 input {
     border-radius: 10px;
-    border: 1px solid rgb(165, 96, 143);
+    border: 1px solid gray;
     line-height: 20px;
     padding: 3px;
 }
 
-button {
-  display:inline-block;
+button#send{
   color: white;
-  background-color:rgb(165, 96, 143);
+  background-color:rgba(0, 0, 0, 0.8);
   text-align: center;
-  width: 17%;
-  margin: auto;
+  width: 28%;
+  margin: 8px;
   right: 0;
   left: 0;
   padding: 8px;
+  width: 120px;
   border-radius: 10px;
+  font-family: 'Alatsi', sans-serif;
+  max-width: 200px;
+  text-transform: uppercase;
+  margin-top: 15px;
 }
 
 textarea {
   width: 75%;
   height: 40vh;
   border-radius: 10px;
-  border: 1px solid rgb(165, 96, 143);
+  border: 1px solid gray;
   line-height: 20px;
   padding: 3px;
+  margin-bottom: 10px;
 }
 
 #derechos p{
-  font-family: 'Quicksand', sans-serif;
+  font-family: 'Alatsi', sans-serif;
 }
 /*media queries*/
 @media (min-width:768px) {

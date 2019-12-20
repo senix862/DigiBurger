@@ -8,14 +8,15 @@
   box-sizing: border-box;
 }
 
-  .cuerpo{
+  /* .cuerpo{
   float: left;
   margin-top: 120px;
   width: 100%;
-}
+} */
 
 /* AQUI VA LA PARTE DE PREGUNTAS */
   .preguntas{
+  margin-top: 10%;
   width: 80%;
   margin-left: 10%;
   margin-right: 10%;
@@ -31,12 +32,14 @@ article.pregunta{
 
 article.pregunta p{
   margin: 20px 0;
-  font-family: 'Quicksand', sans-serif;
+  font-family: 'Alatsi', sans-serif;
 }
 
 .pregunta h3{
-  font-family: 'Patua One';
+  text-decoration: none;
+  font-family: 'Alatsi';
   margin: 4px;
+    text-transform: uppercase;
 }
 
 iframe{

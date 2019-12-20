@@ -13,7 +13,7 @@
       @section('texto')
         Contacto
       @endsection
-
+      <form class="" action="messenger" method="post">
       <label for="nombre">Nombre:</label>
       <br>
       <input id="nombre" type="text" name="nombre" value=""required>
@@ -30,6 +30,7 @@
       <br>
       <textarea id="mensaje" name="mensaje" rows="" cols="" required></textarea>
       <br>
-      <button type="submit" name="button">Enviar</button>
+      <button id="send" type="submit" name="button">Enviar</button>
+      </form>
 
 @endsection
