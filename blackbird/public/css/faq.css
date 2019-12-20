@@ -8,14 +8,10 @@
   box-sizing: border-box;
 }
 
-  /* .cuerpo{
-  float: left;
-  margin-top: 120px;
-  width: 100%;
-} */
 
 /* AQUI VA LA PARTE DE PREGUNTAS */
   .preguntas{
+  font-size: 20px;
   margin-top: 10%;
   width: 80%;
   margin-left: 10%;

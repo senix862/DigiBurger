@@ -8,7 +8,12 @@
   box-sizing: border-box;
 }
 
+#contacto{
+  margin-top: 100px;
+}
+
 form{
+  font-size: 20px;
   float: left;
   margin-top: 110px;
   width: 100%;

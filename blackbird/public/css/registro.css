@@ -8,9 +8,12 @@
   box-sizing: border-box;
 }
 
+#contenedor{
+  margin-top: 100px;
+}
+
 .cuerpo{
   float: left;
-  margin-top: 120px;
   width:100%;
   text-align: center;
 }

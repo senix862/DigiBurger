@@ -28,7 +28,6 @@
 
       <title>@yield('title')</title>
   </head>
-  <body>
 {{-- Menu Nuevo con Js --}}
 <header>
 <div id="encabezado" class="encabezado">
@@ -80,52 +79,8 @@
               <li><a href="{{ route('logout') }}" onclick="event.preventDefault(); document.getElementById('logout-form').submit();">"><i class="fas fa-sign-out-alt"></i></a></li>
              </ul>
           </div> --}}
-          <!-- End of Nav Structure -->
-      <!-- barra de busqueda
-      {{-- <div class="active-purple-3 active-purple-4 mb-4">
-      <input id="search"class="form-control" type="text" placeholder="Search" aria-label="Search">
-      </div> --}}
-      <div class="lupa">
-       <a href="productos.php"><i class="fas fa-search"></i></a>
-      </div>
-      <div class="carrito">
-        <a href="carrito.php"><i class="fas fa-shopping-basket"></i></a>
-      </div>
-      </header>
-      {{-- <div class="banner">
-        <img src="/img/banner.png" alt="BANNER">
-
-      </div> --}}
-
-      <div class="menuHor">
-        <ul>
-          <ul class="izquierdos navigation-ul">
-            <a href="/productos"><li>Nuestras Burgers</li></a>
-            <a href="/faq"><li>Preguntas Frecuentes</li></a>
-            <a href="/contacto"><li>Contacto</li></a>
-          </ul>
-          <ul class="derechos navigation-ul">
-            <a href="/search"><li>Buscar</li></a>
-        @auth
-            <a href="/lista"><li>Mi Lista</li></a>
-            <a href="{{ route('logout') }}"
-               onclick="event.preventDefault();
-                             document.getElementById('logout-form').submit();">
-                <li>{{ __('Logout') }}</li></a>
-        @else
-            <a href="/login"><li>Ingresar</li></a>
-            <a href="/register"><li>Registrarme</li></a>
-        @endauth
-          </ul>
-        </ul>
-      </div>
-      -->
           @yield('main')
-
-
-
       <footer>
-
         <div class="cierre">
           <div class="ancla">
             <a href="/contacto">CONTACTO</a>
@@ -135,9 +90,10 @@
               <a href="https://www.facebook.com" target="_blank"><i class="fab fa-facebook-square"></i></a>
               <a href="https://www.instagram.com" target="_blank"><i class="fab fa-instagram"></i></a>
           </div>
-
         </div>
-
+        <div id="powered">
+          Powered by: @ACN 2019
+        </div>
       </footer>
       <a data-scroll id="volver" href="#"><i class="
       fas fa-arrow-circle-up"></i></a>

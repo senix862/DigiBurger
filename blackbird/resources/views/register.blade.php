@@ -1,7 +1,13 @@
 @extends('layout')
 
   @section('css')
-    <link rel="stylesheet" href="/css/registro.css">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+  <link rel="shortcut icon" href="../favicon.ico">
+  <link rel="stylesheet" type="text/css" href="/css/common.css">
+  <link rel="stylesheet" href="/css/index.css">
+  <link rel="stylesheet" href="/css/videohome.css">
+  <link rel="stylesheet" href="/css/fontawesome/css/all.css">
+  <link rel="stylesheet" href="/css/registro.css">
   @endsection
 
   @section('title')
@@ -13,6 +19,7 @@
   @endsection
 
 @section('main')
+<section id="contenedor">
 <div class="cuerpo">
       <form method="POST" action="{{ route('register') }}" enctype="multipart/formdata">
           @csrf
@@ -98,7 +105,8 @@
             <input class="check" type="checkbox" name="newsletter" value=""> Deseo recibir ofertas por mail.
             <br>
             <button id="registro" type="submit" name="button">Registro</button>
-                      </form>
+            </form>
+          </section>
 @php
 
 @endphp
