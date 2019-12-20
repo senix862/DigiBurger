@@ -15,19 +15,20 @@
   @section('main')
       <div class="container">
         <div class="card-group">
-
+<?php $cantidad=1; ?>
 @foreach ($productos as $producto)
 
    <div class="card card-peli">
-     <img class="fondo-bur" src="/storage/{{$producto->imagen}}">
+     <img class="fondo-bur" src="/storage/{{$producto->imagen}}" style="border-radius=50%" width="30%">
      <div class="card-header">{{ $producto->nombre }}</div>
      <div class="card-body">
        <p class="card-text">{{ $producto->getCategoriaName() }}</p>
        <p class="card-text">Calorias: {{  $producto->calorias }}</p>
-       <p class="card-text">Precio: {{  $producto->precio }}</p>
-       <p class="card-text">Cantidad: 4</p>
+       <p class="card-text">Precio: $ {{  $producto->precio }}</p>
+       <p class="card-text">Cantidad: <?=$cantidad?>
+       </p>
        <p class="card-text">
-         <form class="btn btn-success" action="/carrito/{{$producto->id}}" method="post">
+         <form class="btn btn-success" action="/carrito/{{$producto->id}}"  method="post">
              @csrf
              <button type="submit" class="btn btn-success">
                  Agregar
@@ -46,7 +47,7 @@
          </div>
           <div class="card-header">TOTAL: $
             @foreach ($productos as $producto)
-            <?php $producto->precio * 4  ?>
+            {{$producto->precio}}
             @endforeach
           </div>
 
