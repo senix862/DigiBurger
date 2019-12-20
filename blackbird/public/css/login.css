@@ -8,6 +8,13 @@
   box-sizing: border-box;
 }
 
+.container{
+  width: 100%;
+  background-image: url('/img/fondo-login.jpg');
+  background-image: cover;
+  background-repeat: no-repeat;
+}
+
 .cuerpo{
   float: left;
   margin-top: 50px;
@@ -19,6 +26,10 @@ form {
   text-align: center;
   display: inline-block;
   max-width: 700px;
+}
+
+.datos{
+margin-top: 150px;
 }
 
 label {
@@ -69,7 +80,7 @@ textarea {
 main .datos a{
   display: block;
   margin-top: .4vh;
-  color: grey;
+  color: rgba(0,0,0,0.9);
   text-decoration: underline;
 }
 div.cookie{
