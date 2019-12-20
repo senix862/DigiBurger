@@ -12,7 +12,7 @@
 /* AQUI VA LA PARTE DE PREGUNTAS */
   .preguntas{
   font-size: 20px;
-  margin-top: 10%;
+  margin-top: 12%;
   width: 80%;
   margin-left: 10%;
   margin-right: 10%;
@@ -20,7 +20,7 @@
   }
 
 article.pregunta{
-  line-height: 16px;
+  line-height: 23px;
   vertical-align: baseline;
   border-bottom: gray 1px solid;
   margin-bottom: 20px;

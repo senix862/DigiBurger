@@ -21,6 +21,11 @@ a:hover{
 .video video{
   width: 100%;
 }
+
+.contenedor-info{
+  text-align: center;
+}
+
 .content {
   position: fixed;
   bottom: 0;
@@ -30,6 +35,13 @@ a:hover{
   padding: 20px;
 }
 
+.form-group{
+    margin-top: 20px;
+    margin-left: 23%;
+    text-align: left;
+    text-decoration: none;
+    position: none;
+  }
 
 #home{
   position: relative;
