@@ -18,6 +18,7 @@
     <div class="cuerpo">
 
                 <div class="datos">
+                  <h1 style="font-family: 'Alatsi', sans-serif;">INGRESAR</h1>
                     <form method="POST" action="{{ route('login') }}">
                         @csrf
 

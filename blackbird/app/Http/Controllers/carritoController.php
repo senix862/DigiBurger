@@ -58,7 +58,7 @@ class carritoController extends Controller
 
     if ($producto) {
 
-    $user->carrito()->remove($producto_id);
+    $user->carrito()->detach($producto_id);
 
       return redirect('/carrito')
           ->with('status', 'Producto eliminado exitosamente :(')

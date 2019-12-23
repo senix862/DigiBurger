@@ -2,7 +2,6 @@
   margin: 0;
   padding: 0;
   list-style: none;
-  font-family: tahoma,sans-serif;
   text-decoration: none;
   border: none;
   outline: none;
@@ -65,7 +64,7 @@ background-color: white;
   padding: 1vh;
   border-radius: 10px;
   color: #fff;
-  font-family: 'Source Code Pro', monospace;
+  font-family: 'Alatsi', sans-serif;
   font-size: 15px;
 }
 
@@ -151,6 +150,7 @@ form{
   width: 100%;
   display: flex;
   justify-content: space-between;
+  font-family: 'Alatsi', sans-serif;
 }
 /* input{
   border-radius: 15px;
